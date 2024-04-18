@@ -10,6 +10,6 @@ export class CatsService {
     }
 
     findAll(): Cat[]{
-        return this.cats;
+        return this.cats
     }
 }
