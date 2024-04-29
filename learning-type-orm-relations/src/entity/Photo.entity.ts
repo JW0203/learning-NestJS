@@ -1,8 +1,9 @@
 import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
 import {User} from "./User.entity";
+import {Timestamps} from "./Timestamp.entity";
 
 @Entity()
-export class Photo{
+export class Photo extends Timestamps {
     @PrimaryGeneratedColumn()
     id: number;
 
